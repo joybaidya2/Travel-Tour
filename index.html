@@ -7,44 +7,72 @@
     <!--Tailwind link-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white">
    <!--Navbar Section start..-->
-   <nav>
-    <div>
-        <h1>Travelista</h1>
-    </div>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Packages</a></li>
-        <li><a href="#">Destination</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">About Us</a></li>
-    </ul>
-    <div>
-        <button>Book Ticket</button>
-    </div>
+   <nav class="text-white text-lg bg-[#2F6A7F] p-4 sticky top-0 z-50">
+       <div class="flex justify-between items-center w-[92%] mx-auto">
+           <div class="text-3xl font-bold">
+               <h1>Travel<span class="text-cyan-300">Tour</span></h1>
+           </div>
+           <div class="md:hidden">
+               <button id="menu-btn" class="text-white focus:outline-none text-2xl">&#9776;</button>
+           </div>
+           <div id="menu" class="hidden md:flex md:items-center md:space-x-9 flex-col md:flex-row absolute md:static top-16 bg-[#2F6A7F] w-full md:w-auto left-0 text-center p-2 md:p-0 ">
+               <ul class="flex flex-col md:flex-row gap-4 md:gap-9">
+                   <li><a href="#" class="block py-2 md:py-0">Home</a></li>
+                   <li><a href="#" class="block py-2 md:py-0">Packages</a></li>
+                   <li class="text-cyan-200 font-bold text-xl"><a href="#" class="block py-2 md:py-0">Destination</a></li>
+                   <li><a href="#" class="block py-2 md:py-0">Contacts</a></li>
+                   <li><a href="#" class="block py-2 md:py-0">About Us</a></li>
+               </ul>
+               <div class="mt-2 md:mt-0 md:pl-60 ">
+                   <button class="px-5 py-1 border border-white rounded-md font-semibold bg-cyan-500 w-full">Book Ticket</button>
+               </div>
+           </div>
+       </div>
    </nav>
-   <section>
-    <div>
-        <h1>Hello World!</h1>
+   <!--Body section-->
+   <section class="bg-[url('https://images2.alphacoders.com/138/thumb-1920-1385954.jpg')] bg-cover bg-center bg-no-repeat min-h-screen w-full flex items-center justify-center px-4">
+    <div class="text-white text-4xl md:text-6xl font-bold text-center">
+        Let's Create a Memorable Journey
     </div>
-    <div>
-        <p>Hello JavaScript!</p>
+</section>
+<!--all place section-->
+<main>
+    <div class="text-center p-6 mt-20 font-bold text-5xl italic text-cyan-700">
+        <h1>Top Destination</h1>
     </div>
-    <div>
-        <h2>Hi dear.!</h2>
+    <div class="grid md:grid-cols-2 mt-8 gap-20 px-10">
+        <div class="border border-black rounded-md">
+            <img src="https://live.staticflickr.com/65535/7707182500_947e915528_b.jpg" alt="">
+            <div class="flex p-3 justify-between mt-4 font-bold text-xl">
+                <p>Ahsan Manzil</p>
+                <p>BDT <span class="text-red-500">12500</span> (3days)</p>
+            </div>
+        </div>
+        <div class="border border-black rounded-md">
+            <img class="" src="https://www.historyhit.com/app/uploads/2020/11/Lalbagh-Fort-Shutterstock.jpg" alt="">
+            <div class="flex p-3 justify-between mt-4 font-bold text-xl">
+                <p>lalbagh kella</p>
+                <p>BDT <span class="text-red-500">8500</span> (2days)</p>
+            </div>
+        </div>
+        <div class="border border-black rounded-md">
+            <img src="https://seapearlcoxsbazar.com/20230826135945im_/http_/www.seapearlcoxsbazar.com/images/rt003.jpg" alt="">
+            <div class="flex p-3 justify-between mt-4 font-bold text-xl">
+                <p>Cox's Bazar</p>
+                <p>BDT <span class="text-red-500">21000</span> (3days)</p>
+            </div>
+        </div>
+        <div class="border border-black rounded-md">
+            <img src="https://cosmosgroup.sgp1.digitaloceanspaces.com/news/y8eC0WBzPEEVyKIGGjcM3zKIgirEYLTLvioF3GaP.jpeg" alt="">
+            <div class="flex p-3 justify-between mt-4 font-bold text-xl">
+                <p>Bandarban</p>
+                <p>BDT <span class="text-red-500">13700</span> (3days)</p>
+            </div>
+        </div>
     </div>
-   </section>
-   <section>
-    <div>
-        <p>Dear valo aso?</p>
-    </div>
-   </section>
-   <div>
-    <h4>Hello world!</h4>
-   </div>
-   <section>
-    <p>Hello Bangladesh...</p>
-   </section>t
+</main>
+   <script src="javaScript.js"></script>
 </body>
 </html>
